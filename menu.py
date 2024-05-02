@@ -73,7 +73,7 @@ def favoritos():
     #parte logica da função
     opt = int(input(f"> "))
     if opt == 1:
-        receitas()
+        pass
 
 ## Função receita aleatoria
 def ra():
@@ -87,7 +87,7 @@ def ra():
     #parte logica da função
     opt = int(input(f"> "))
     if opt == 1:
-        receitas()
+        pass
                 
 
 ## Função criar receitas
