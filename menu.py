@@ -1,3 +1,5 @@
+## (OPT = OPÇAO) <- opt pega o numero dentro dos submenus para continuar a logica dos menus 
+
 import os
 clear = lambda: os.system('cls')
 
@@ -24,6 +26,7 @@ class bcolors:
 
 ## Função menu
 def menu():
+    clear()
     print(bcolors.WARNING + 
     f"""
     {bcolors.CVIOLET}+----------------------------+
@@ -35,7 +38,7 @@ def menu():
 
     print(f"""    {bcolors.CVIOLET}≈  {bcolors.BOLD}{bcolors.CWHITE}1 {bcolors.ENDC}Receitas
     {bcolors.CBLUE}✶  {bcolors.BOLD}{bcolors.CWHITE}2 {bcolors.ENDC}Favoritos 
-    {bcolors.WARNING}⚡︎ {bcolors.BOLD}{bcolors.CWHITE}3 {bcolors.ENDC}Receita aleatoria
+    {bcolors.WARNING}?  {bcolors.BOLD}{bcolors.CWHITE}3 {bcolors.ENDC}Receita aleatoria
     {bcolors.CRED}⤫  {bcolors.BOLD}{bcolors.CWHITE}4 {bcolors.ENDC}Sair
     """)
 
@@ -48,15 +51,61 @@ def receitas():
     {bcolors.CVIOLET}✐  {bcolors.BOLD}{bcolors.CWHITE}2 {bcolors.ENDC}CRUD
     {bcolors.CRED}↺  {bcolors.BOLD}{bcolors.CWHITE}3 {bcolors.ENDC}Voltar
     """)
-        
+        #parte logica da função
+        opt = int(input(f"> "))
+        if opt == 1:
+            cr()
+        if opt == 2:
+            crud()
+        if opt == 3:
+
+            pass
+
+## Função favoritos
+def favoritos():
+    clear()
+    print(f""" {bcolors.CWHITE}({bcolors.CBLUE}✶{bcolors.CWHITE})
+    
+    Under construction 🔧
+    {bcolors.CRED}↺  {bcolors.BOLD}{bcolors.CWHITE}1 {bcolors.ENDC}Voltar
+    """)
+    
+    #parte logica da função
+    opt = int(input(f"> "))
+    if opt == 1:
+        receitas()
+
+## Função receita aleatoria
+def ra():
+    clear()
+    print(f""" {bcolors.CWHITE}({bcolors.WARNING}?{bcolors.CWHITE})
+    
+    Under construction 🔧
+    {bcolors.CRED}↺  {bcolors.BOLD}{bcolors.CWHITE}1 {bcolors.ENDC}Voltar
+    """)
+    
+    #parte logica da função
+    opt = int(input(f"> "))
+    if opt == 1:
+        receitas()
+                
 
 ## Função criar receitas
 def cr():
     clear()
-    print("Under construction 🔧")
-
+    print(f"""  Under construction 🔧
+    {bcolors.CRED}↺  {bcolors.BOLD}{bcolors.CWHITE}1 {bcolors.ENDC}Voltar""")
+    
+    opt = int(input(f"> "))
+    if opt == 1:
+        receitas()
 ## Função crud
 def crud():
     clear()
-    print("Under construction 🔧")
+    print(f"""  Under construction 🔧
+    {bcolors.CRED}↺  {bcolors.BOLD}{bcolors.CWHITE}1 {bcolors.ENDC}Voltar""")
+    
+    opt = int(input(f"> "))
+    if opt == 1:
+        receitas()
 

@@ -3,23 +3,16 @@ from menu import *
 clear = lambda: os.system('cls')
 
 while True:
-    clear()
     menu()
     select = int(input(f"> "))
-    
+
     if select == 1:
-        clear()
         receitas()
+    if select == 2:
+        favoritos()
+    if select == 3:
+        ra()
+    if select == 4:
+        break
     
-        opt = int(input(f"> "))
-        
-        if opt == 1:
-            clear()
-            cr()
-        if opt == 2:
-            clear()
-            crud()
-        if opt == 3:
-            clear()
-            pass
-        
+  
