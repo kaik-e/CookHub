@@ -1,5 +1,6 @@
 ## (OPT = OPÇAO) <- opt pega o numero dentro dos submenus para continuar a logica dos menus 
 
+## vai se foder
 import os
 clear = lambda: os.system('cls')
 
