@@ -18,7 +18,7 @@ class c:
     BEGE  = '\33[36m'
     BRANCO  = '\33[37m'
 
-
+#Função para alterar cor do menu
 def menu():
     clear()
     print(c.WARNING + 
