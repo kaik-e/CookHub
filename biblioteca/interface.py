@@ -4,7 +4,7 @@ import random
 
 class c:
     WARNING = '\033[93m'    #Codigo de cor para avisos
-    FAIL = '\033[91m'   #Codigo de cor para erros
+    FAIL = '\033[91m'   #Codigo para a cor para erros
     END = '\033[0m'     #Termina a cor no texto
     BOLD = '\033[1m'    #Deixa o texto em negrito
     BLINK = '\033[5m'   #Faz o texto piscar 
