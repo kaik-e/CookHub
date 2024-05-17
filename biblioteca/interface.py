@@ -42,6 +42,7 @@ def menu_Crud():
         {c.VERMELHO}✖  {c.BOLD}{c.BRANCO}6 {c.END}Sair
         """)
 
+#Função para funcionalidades
 def menu_Funcionalides():
     
     
@@ -53,6 +54,7 @@ def menu_Funcionalides():
         {c.VERMELHO}✖  {c.BOLD}{c.BRANCO}6 {c.END}Sair
         """)
 
+#Função para os favoritos 
 def menu_Favoritos():
     
     
