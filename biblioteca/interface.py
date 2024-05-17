@@ -18,6 +18,7 @@ class c:
     BEGE  = '\33[36m'
     BRANCO  = '\33[37m'
 
+
 def menu():
     clear()
     print(c.WARNING + 
@@ -29,7 +30,7 @@ def menu():
     {c.VIOLETA}+----------------------------+
     """ + c.END)
 
-
+#Função para adicionar, visualizar, atualizar e excluir receitas
 def menu_Crud():
     
     
