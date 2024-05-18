@@ -20,6 +20,7 @@ class c:
 
 ## Função menu
 def menu():
+    clear()
     print(c.WARNING + 
     f"""
     {c.VIOLETA}+----------------------------+
@@ -181,12 +182,17 @@ def marcar_Favorito():
 # Função para visualizar as receitas favoritas
 def ver_Favoritos():
     file = open("receitas.txt","r", encoding='utf-8')
-    print("\nLista de Receitas Favoritas:")
+    print(f"{c.AZUL}✶  {c.BRANCO}Favoritos")
     for linha in file:
         if "(Favorita)" in linha:
             print(linha.strip())
             for _ in range(3):  # Pula as próximas três linhas (país, ingredientes, modo de preparo)
                 next(file)
+    print(f"""
+    {c.VERMELHO}↺  {c.BOLD}{c.BRANCO}1 {c.END}Voltar
+    {c.VERMELHO}⤫  {c.BOLD}{c.BRANCO}2 {c.END}Sair
+    """)
+
 def contar_Receitas():
     count = 0
     file = open("receitas.txt","r", encoding='utf-8')

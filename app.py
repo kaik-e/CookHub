@@ -18,7 +18,7 @@ while True:
             ver_Receitas()
             opc_crud = int(input(f"> "))
             if opc_crud == 1:
-                menu()
+                menu_Crud()
             if opc_crud == 2:
                 print('Programa Encerrado!')
                 break
