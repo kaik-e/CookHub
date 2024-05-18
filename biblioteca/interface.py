@@ -1,7 +1,7 @@
 import os
 clear = lambda: os.system('cls')
 import random
-
+# Menu temporario, para implementacao
 def mostra_Linha():
     print('-='*42)
 
@@ -38,7 +38,7 @@ def menu_Favoritos():
     print('[3] - Voltar')
     print('[4] - Sair')
     mostra_Linha()
-# Função para adicionar uma nova receita
+
 def adicionar_Receita():
     nome = input("Digite o nome da receita: ").title()
     pais_origem = input("Digite o país de origem da receita: ").title()
@@ -130,52 +130,4 @@ def deletar_Receita():
     else:
         print("Receita não encontrada.")
 
-def marcar_Favorito():
-    nome = input("Digite o nome da receita que deseja marcar como favorita: ").title()
-    if not os.path.exists("receitas.txt"):
-        print("Não existem receitas para marcar como favorita.")
-        return
-    
-    file = open("receitas.txt","r", encoding='utf-8')
-    linhas = file.readlines()
-
-    encontrada = False
-    file = open("receitas.txt","w", encoding='utf-8')
-    for i in range(0, len(linhas), 5):
-        if linhas[i].strip() == f"Nome: {nome}":
-            file.write(f"Nome: {nome} (Favorita)\n")
-            for j in range(1, 4):
-                file.write(linhas[i + j])
-            encontrada = True
-        else:
-            file.write("".join(linhas[i:i+5]))
-
-    if encontrada:
-        print("Receita marcada como favorita!")
-    else:
-        print("Receita não encontrada.")
-
-# Função para visualizar as receitas favoritas
-def ver_Favoritos():
-    file = open("receitas.txt","r", encoding='utf-8')
-    print("\nLista de Receitas Favoritas:")
-    for linha in file:
-        if "(Favorita)" in linha:
-            print(linha.strip())
-            for _ in range(3):  # Pula as próximas três linhas (país, ingredientes, modo de preparo)
-                next(file)
-def contar_Receitas():
-    count = 0
-    file = open("receitas.txt","r", encoding='utf-8')
-    for line in file:
-        if line.strip() == "":
-            count += 1
-    print(f"Total de receitas cadastradas: {count}")
-
-def receita_Aleatoria():
-    file = open("receitas.txt","r", encoding='utf-8')
-    receitas = file.read().split("\n\n")  # Divide o arquivo em blocos separados por duas quebras de linha
-    receita_aleatoria = random.choice(receitas)
-    print("\nReceita Aleatória:")
-    print(receita_aleatoria)
 
