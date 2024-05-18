@@ -77,8 +77,12 @@ def adicionar_Receita():
 # Função para ver todas as receitas
 def ver_Receitas():
     file = open("receitas.txt","r", encoding='utf-8')
-    print("\nLista de Receitas:"'\n')
+    print(f"\n{c.VIOLETA}✺  {c.BRANCO}Lista de Receitas:"'\n')
     print(file.read())
+    print(f"""
+    {c.VERMELHO}↺  {c.BOLD}{c.BRANCO}1 {c.END}Voltar
+    {c.VERMELHO}⤫  {c.BOLD}{c.BRANCO}2 {c.END}Sair
+    """)
 
 # Função para filtrar receitas por país de origem
 def filtrar_Pais():

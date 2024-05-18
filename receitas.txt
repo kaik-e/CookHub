@@ -1,5 +1,5 @@
-Nome: Pão De Queijo
-País de Origem: Brasil
-Ingredientes: Pão, Alho, Alface
-Modo de Preparo: 20 Minutos No Forno
+{c.VERMELHO}Nome: Pão De Queijo
+{c.VERMELHO}País de Origem: Brasil
+{c.VERMELHO}Ingredientes: Pão, Alho, Alface
+{c.VERMELHO}Modo de Preparo: {c.BRANCO}20 Minutos No Forno
 
