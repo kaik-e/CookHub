@@ -20,7 +20,7 @@ while True:
             if opc_crud == 1:
                 menu_Crud()
             if opc_crud == 2:
-                print('Programa Encerrado!')
+                pencerrado()
                 break
 
         # [3] - Atualizar Receitas
@@ -37,7 +37,7 @@ while True:
 
         # [6] - Sair
         if opc_crud == 6:
-            print('Programa Encerrado!')
+            pencerrado()
             break
 
     # [2] - Filtragem Por País
@@ -61,7 +61,7 @@ while True:
             if opc_fav == 1:
                 menu()
             if opc_fav == 2:
-                print('Programa Encerrado!')
+                pencerrado()
                 break
 
         # Voltar
@@ -70,7 +70,7 @@ while True:
 
         # Sair
         if opc_fav == 4:
-            print('Programa Encerrado!')
+            pencerrado()
             break
 
     # [4] - Sugestão de Recieta Aleatória
@@ -83,5 +83,5 @@ while True:
 
     # [6] - Sair
     if opc_fun == 6:
-        print('Programa Encerrado!')
+        pencerrado()
         break

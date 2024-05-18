@@ -32,9 +32,9 @@ def menu():
 
     print(f"""    {c.VIOLETA}≈  {c.BOLD}{c.BRANCO}1 {c.END}Hub de Receitas
     {c.AZUL}◍  {c.BOLD}{c.BRANCO}2 {c.END}Filtragem por país      
-    {c.AZUL}✶  {c.BOLD}{c.BRANCO}3 {c.END}Favoritos 
-    {c.WARNING}?  {c.BOLD}{c.BRANCO}4 {c.END}Receita aleatoria
-    {c.WARNING}∘  {c.BOLD}{c.BRANCO}5 {c.END}Contador de receiras
+    {c.WARNING}✶  {c.BOLD}{c.BRANCO}3 {c.END}Favoritos 
+    {c.VERDE}?  {c.BOLD}{c.BRANCO}4 {c.END}Receita aleatoria
+    {c.AMARELO}∘  {c.BOLD}{c.BRANCO}5 {c.END}Contador de receitas
     {c.VERMELHO}⤫  {c.BOLD}{c.BRANCO}6 {c.END}Sair
     """) 
 
@@ -42,22 +42,23 @@ def menu_Crud():
         clear()
         print(f""" {c.BRANCO}({c.VIOLETA}≈{c.BRANCO})
               
-    {c.AZUL}✎  {c.BOLD}{c.BRANCO}1 {c.END}Cadastrar receita
+    {c.VIOLETA}✎  {c.BOLD}{c.BRANCO}1 {c.END}Cadastrar receita
     {c.AZUL}✺  {c.BOLD}{c.BRANCO}2 {c.END}Visualizar receitas           
-    {c.VIOLETA}✐  {c.BOLD}{c.BRANCO}3 {c.END}Atualizar receitas
-    {c.VIOLETA}⚠  {c.BOLD}{c.BRANCO}4 {c.END}Excluir receitas
+    {c.WARNING}✐  {c.BOLD}{c.BRANCO}3 {c.END}Atualizar receitas
+    {c.VERDE}⚠  {c.BOLD}{c.BRANCO}4 {c.END}Excluir receitas
     {c.VERMELHO}↺  {c.BOLD}{c.BRANCO}5 {c.END}Voltar
     {c.VERMELHO}⤫  {c.BOLD}{c.BRANCO}6 {c.END}Sair
     """)
 
 def menu_Favoritos():
-    
-    print('COOKHUB v1.0')
-    
-    print('[1] - Adicionar Receita aos Favoritos')
-    print('[2] - Mostrar as Receitas Favoritadas')
-    print('[3] - Voltar')
-    print('[4] - Sair')
+        clear()
+        print(f""" {c.BRANCO}({c.WARNING}✶{c.BRANCO})
+              
+    {c.VIOLETA}✎  {c.BOLD}{c.BRANCO}1 {c.END}Adicionar aos favoritos
+    {c.WARNING}✺  {c.BOLD}{c.BRANCO}2 {c.END}Visualizar favoritos
+    {c.VERMELHO}↺  {c.BOLD}{c.BRANCO}3 {c.END}Voltar
+    {c.VERMELHO}⤫  {c.BOLD}{c.BRANCO}4 {c.END}Sair
+    """)
     
 
 def adicionar_Receita():
@@ -87,7 +88,7 @@ def ver_Receitas():
 
 # Função para filtrar receitas por país de origem
 def filtrar_Pais():
-    pais = input("Digite o país de origem para filtrar as receitas: ").title()
+    pais = input(f"{c.AZUL}◍ {c.BRANCO}Digite o país de origem para filtrar as receitas: ").title()
     file = open("receitas.txt","r", encoding='utf-8')
     print(f"\nReceitas do país '{pais}':")
     encontrada = False
@@ -102,7 +103,7 @@ def filtrar_Pais():
 
 # Função para atualizar uma receita existente
 def atualizar_Receita():
-    nome = input("Digite o nome da receita que deseja atualizar: ").title()
+    nome = input(f"{c.WARNING}✐ {c.BRANCO}Digite o nome da receita que deseja atualizar: ").title()
     if not os.path.exists("receitas.txt"):
         print("Não existem receitas para atualizar.")
         return
@@ -134,7 +135,7 @@ def atualizar_Receita():
 
 # Função para deletar uma receita existente
 def deletar_Receita():
-    nome = input("Digite o nome da receita que deseja deletar: ").title()
+    nome = input(f"{c.VERDE}⚠ {c.BRANCO}Digite o nome da receita que deseja deletar: ").title()
     if not os.path.exists("receitas.txt"):
         print("Não existem receitas para deletar.")
         return
@@ -154,8 +155,9 @@ def deletar_Receita():
         print("Receita deletada com sucesso!")
     else:
         print("Receita não encontrada.")
+
 def marcar_Favorito():
-    nome = input("Digite o nome da receita que deseja marcar como favorita: ").title()
+    nome = input(f"{c.VIOLETA}✎ {c.BRANCO}Digite o nome da receita que deseja marcar como favorita: ").title()
     if not os.path.exists("receitas.txt"):
         print("Não existem receitas para marcar como favorita.")
         return
@@ -182,7 +184,7 @@ def marcar_Favorito():
 # Função para visualizar as receitas favoritas
 def ver_Favoritos():
     file = open("receitas.txt","r", encoding='utf-8')
-    print(f"{c.AZUL}✶  {c.BRANCO}Favoritos")
+    print(f"{c.WARNING}✶  {c.BRANCO}Favoritos")
     for linha in file:
         if "(Favorita)" in linha:
             print(linha.strip())
@@ -199,12 +201,14 @@ def contar_Receitas():
     for line in file:
         if line.strip() == "":
             count += 1
-    print(f"Total de receitas cadastradas: {count}")
+    print(f"{c.AMARELO}∘ {c.BRANCO}Total de receitas cadastradas: {count}")
 
 def receita_Aleatoria():
     file = open("receitas.txt","r", encoding='utf-8')
     receitas = file.read().split("\n\n")  # Divide o arquivo em blocos separados por duas quebras de linha
     receita_aleatoria = random.choice(receitas)
-    print("\nReceita Aleatória:")
+    print(f"\n{c.VERDE}? {c.BRANCO}Receita Aleatória:")
     print(receita_aleatoria)
 
+def pencerrado():
+    print(f"CookHub Encerrado! {c.BOLD}{c.VIOLETA}(^_~)つ{c.END}")
