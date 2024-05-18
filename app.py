@@ -26,3 +26,33 @@ while True:
         if opc_crud == 6:
             print('Programa Encerrado!')
             break
+    # [2] - Filtragem Por País
+    if opc_fun == 2:
+        filtrar_Pais()
+    # [3] - Lista de Favoritos
+    if opc_fun == 3:
+        menu_Favoritos()
+        opc_fav = int(input('Selecione uma opção: '))
+        # Adicionar Receitas aos Favoritos
+        if opc_fav == 1:
+            marcar_Favorito()
+        # Exibir Receitas Favoritadas
+        if opc_fav == 2:
+            ver_Favoritos()
+        # Voltar
+        if opc_fav == 3:
+            menu_Crud()
+        # Sair
+        if opc_fav == 4:
+            print('Programa Encerrado!')
+            break
+    # [4] - Sugestão de Recieta Aleatória
+    if opc_fun == 4:
+        receita_Aleatoria()
+    # [5] - Contador de Receitas
+    if opc_fun == 5:
+        contar_Receitas()
+    # [6] - Sair
+    if opc_fun == 6:
+        print('Programa Encerrado!')
+        break

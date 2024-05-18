@@ -171,3 +171,10 @@ def contar_Receitas():
             count += 1
     print(f"Total de receitas cadastradas: {count}")
 
+def receita_Aleatoria():
+    file = open("receitas.txt","r", encoding='utf-8')
+    receitas = file.read().split("\n\n")  # Divide o arquivo em blocos separados por duas quebras de linha
+    receita_aleatoria = random.choice(receitas)
+    print("\nReceita Aleatória:")
+    print(receita_aleatoria)
+
