@@ -1,3 +1,7 @@
+<a href="https://aimeos.org/">
+    <img src="https://i.imgur.com/4KTdED7.png" alt="CookHub Logo" title="CookHub" align="right" height="70" />
+</a>
+
 # CookHub
 
 🍴 CookHub é um simples programa feito em python sem o uso de libs para ajudar Rafael a organizar suas receitas em um só lugar!
@@ -10,7 +14,7 @@ Use o git para instalar o [cookhub](https://git-scm.com/) de forma rápida
 git clone https://github.com/kaik-e/CookHub
 ```
 
-Ou baixe a versão mais atualizada por aqui > \*\*[Download](https://github.com/kaik-e/CookHub/archive/refs/tags/python.zip)
+Ou baixe a versão mais atualizada por aqui > [Download](https://github.com/kaik-e/CookHub/archive/refs/tags/python.zip)
 
 ## Demo
 
