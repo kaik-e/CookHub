@@ -104,6 +104,7 @@ def filtrar_Pais():
     {c.VERMELHO}↺  {c.BOLD}{c.BRANCO}1 {c.END}Voltar
     {c.VERMELHO}⤫  {c.BOLD}{c.BRANCO}2 {c.END}Sair
     """)    
+
 # Função para atualizar uma receita existente
 def atualizar_Receita():
     nome = input(f"{c.WARNING}✐ {c.BRANCO}Digite o nome da receita que deseja atualizar: ").title()
@@ -118,9 +119,9 @@ def atualizar_Receita():
     file = open("receitas.txt","w", encoding='utf-8')
     for i in range(0, len(linhas), 5):
         if linhas[i].strip() == f"Nome: {nome}":
-            pais_origem = input("Digite o novo país de origem da receita: ").title()
-            ingredientes = input("Digite os novos ingredientes da receita (separados por vírgula): ").title()
-            modo_preparo = input("Digite o novo modo de preparo da receita: ").title()
+            pais_origem = input(f"{c.VERDE}✎ {c.BRANCO}Digite o novo país de origem da receita: ").title()
+            ingredientes = input(f"{c.VIOLETA}✎ {c.BRANCO}Digite os novos ingredientes da receita (separados por vírgula): ").title()
+            modo_preparo = input(f"{c.AZUL}✎ {c.BRANCO}Digite o novo modo de preparo da receita: ").title()
                 
             file.write(f"Nome: {nome}\n")
             file.write(f"País de Origem: {pais_origem}\n")
@@ -211,10 +212,10 @@ def contar_Receitas():
     """)
 
 def receita_Aleatoria():
-    file = open("receitas.txt","r", encoding='utf-8')
+    file = open("random.txt","r", encoding='utf-8')
     receitas = file.read().split("\n\n")  # Divide o arquivo em blocos separados por duas quebras de linha
     receita_aleatoria = random.choice(receitas)
-    print(f"\n{c.VERDE}? {c.BRANCO}Receita Aleatória:")
+    print(f"\n{c.VERDE}? {c.BRANCO}Receita Aleatória:\n")
     print(receita_aleatoria)
     print(f"""
     {c.VERMELHO}↺  {c.BOLD}{c.BRANCO}1 {c.END}Voltar
