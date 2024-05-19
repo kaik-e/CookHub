@@ -4,15 +4,17 @@
 
 ## Instalação
 
-Use o [Git](https://git-scm.com/) para instalar o CookHub de forma rapida
+Use o git para instalar o [cookhub](https://git-scm.com/) de forma rápida
 
 ```bash
 git clone https://github.com/kaik-e/CookHub
 ```
 
+Ou baixe a versão mais atualizada por aqui > \*\*[Download](https://github.com/kaik-e/CookHub/archive/refs/tags/python.zip)
+
 ## Demo
 
-![Demo gif](img/demo.gif)
+![Shallow Backup GIF Demo](img/demo.gif)
 
 ## Uso
 
@@ -30,7 +32,7 @@ Modo de Preparo: -
 
 ◉ 1  receitas
 
-> 1 #i nput deve ser um numero inteiro valido
+> 1 #O input deve ser um numero inteiro valido
 ```
 
 ## Features
@@ -46,8 +48,4 @@ Modo de Preparo: -
 
 ## Creditos
 
-[Kaike](https://github.com/kaik-e)
-
-[Davi](https://github.com/davimqz)
-
-[Gustavo](https://github.com/Gustaguiar02)
+[Kaike](https://github.com/kaik-e) [Davi](https://github.com/davimqz) [Gustavo](https://github.com/Gustaguiar02)
