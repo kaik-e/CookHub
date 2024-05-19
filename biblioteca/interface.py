@@ -68,7 +68,7 @@ def adicionar_Receita():
     modo_preparo = input("Digite o modo de preparo da receita: ").title()
     
     file = open("receitas.txt","a", encoding='utf-8')
-    file.write(f"Nome: {nome}\n")
+    file.write(f"\n\nNome: {nome}\n")
     file.write(f"País de Origem: {pais_origem}\n")
     file.write(f"Ingredientes: {ingredientes}\n")
     file.write(f"Modo de Preparo: {modo_preparo}\n")
@@ -100,7 +100,10 @@ def filtrar_Pais():
 
     if not encontrada:
         print("Nenhuma receita encontrada para este país.")
-
+    print(f"""
+    {c.VERMELHO}↺  {c.BOLD}{c.BRANCO}1 {c.END}Voltar
+    {c.VERMELHO}⤫  {c.BOLD}{c.BRANCO}2 {c.END}Sair
+    """)    
 # Função para atualizar uma receita existente
 def atualizar_Receita():
     nome = input(f"{c.WARNING}✐ {c.BRANCO}Digite o nome da receita que deseja atualizar: ").title()
@@ -199,9 +202,13 @@ def contar_Receitas():
     count = 0
     file = open("receitas.txt","r", encoding='utf-8')
     for line in file:
-        if line.strip() == "":
+        if "Nome" in line:
             count += 1
     print(f"{c.AMARELO}∘ {c.BRANCO}Total de receitas cadastradas: {count}")
+    print(f"""
+    {c.VERMELHO}↺  {c.BOLD}{c.BRANCO}1 {c.END}Voltar
+    {c.VERMELHO}⤫  {c.BOLD}{c.BRANCO}2 {c.END}Sair
+    """)
 
 def receita_Aleatoria():
     file = open("receitas.txt","r", encoding='utf-8')
@@ -209,6 +216,10 @@ def receita_Aleatoria():
     receita_aleatoria = random.choice(receitas)
     print(f"\n{c.VERDE}? {c.BRANCO}Receita Aleatória:")
     print(receita_aleatoria)
+    print(f"""
+    {c.VERMELHO}↺  {c.BOLD}{c.BRANCO}1 {c.END}Voltar
+    {c.VERMELHO}⤫  {c.BOLD}{c.BRANCO}2 {c.END}Sair
+    """)    
 
 def pencerrado():
-    print(f"CookHub Encerrado! {c.BOLD}{c.VIOLETA}(^_~)つ{c.END}")
+    print(f"CookHub Encerrado! {c.BOLD}{c.VIOLETA}(^_~)/{c.END}")
