@@ -67,6 +67,10 @@ Linguagem - **Python 3.12**
 
 ![made-with-python](https://img.shields.io/badge/Made%20with-Python3-brightgreen)
 
+## 📄 Docs
+
+[📄 Documentaçāo](https://cookhub.gitbook.io/cookhub/)
+
 ## 👥 Creditos
 
 [Kaike](https://github.com/kaik-e) [Davi](https://github.com/davimqz) [Gustavo](https://github.com/Gustaguiar02)
