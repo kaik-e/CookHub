@@ -1,0 +1,74 @@
+Nome: Sopa de Legumes
+País de Origem: Brasil
+Ingredientes: batata, cenoura, cebola, alho, tomate, abobrinha, ervilha, água, sal, pimenta
+Modo de Preparo: Descasque e corte os legumes em pedaços pequenos. Refogue a cebola e o alho, adicione os legumes, cubra com água e tempere a gosto. Cozinhe até os legumes ficarem macios.
+
+Nome: Omelete Simples
+País de Origem: França
+Ingredientes: ovos, leite, sal, pimenta, manteiga
+Modo de Preparo: Bata os ovos com o leite, tempere com sal e pimenta. Aqueça a manteiga em uma frigideira e despeje a mistura de ovos. Cozinhe até firmar dos dois lados.
+
+Nome: Guacamole
+País de Origem: México
+Ingredientes: abacate, tomate, cebola, coentro, limão, sal, pimenta
+Modo de Preparo: Amasse o abacate, adicione os tomates picados, a cebola, o coentro, o suco de limão, o sal e a pimenta. Misture bem e sirva com nachos.
+
+Nome: Salada Caesar
+País de Origem: Estados Unidos
+Ingredientes: alface romana, croutons, queijo parmesão, peito de frango, molho Caesar
+Modo de Preparo: Misture a alface cortada em pedaços, os croutons, o queijo parmesão e o frango grelhado. Regue com o molho Caesar e sirva.
+
+Nome: Tempurá de Legumes
+País de Origem: Japão
+Ingredientes: legumes variados (pimentão, abóbora, brócolis), farinha de trigo, amido de milho, água gelada, sal, óleo para fritar
+Modo de Preparo: Misture a farinha de trigo, o amido de milho, a água gelada e o sal até obter uma massa leve. Passe os legumes na massa e frite em óleo quente até dourar. Escorra em papel toalha e sirva.
+
+Nome: Risoto de Cogumelos
+País de Origem: Itália
+Ingredientes: arroz arbóreo, cogumelos variados (shitake, shimeji, champignon), cebola, alho, vinho branco, caldo de legumes, manteiga, queijo parmesão, sal, pimenta
+Modo de Preparo: Refogue a cebola e o alho, adicione o arroz e refogue por alguns minutos. Acrescente o vinho branco e deixe evaporar. Adicione o caldo de legumes aos poucos, mexendo sempre, até o arroz ficar al dente. Acrescente os cogumelos, a manteiga e o queijo parmesão. Tempere com sal e pimenta a gosto.
+
+Nome: Tacos de Carne
+País de Origem: México
+Ingredientes: carne moída, cebola, pimentão, tempero para taco, tortillas de milho, queijo cheddar ralado, tomate, alface, salsa, abacate
+Modo de Preparo: Refogue a carne moída com a cebola, o pimentão e o tempero para taco. Aqueça as tortillas, recheie com a carne e os acompanhamentos a gosto.
+
+Nome: Salada de Quinoa
+País de Origem: Peru
+Ingredientes: quinoa, pepino, tomate cereja, cebola roxa, azeitonas pretas, hortelã, suco de limão, azeite de oliva, sal, pimenta
+Modo de Preparo: Cozinhe a quinoa conforme as instruções da embalagem e deixe esfriar. Misture com os vegetais picados, as azeitonas e as folhas de hortelã. Tempere com suco de limão, azeite de oliva, sal e pimenta.
+
+Nome: Frango ao Curry
+País de Origem: Índia
+Ingredientes: peito de frango, cebola, alho, gengibre, curry em pó, leite de coco, tomate, pimentão, sal, coentro
+Modo de Preparo: Refogue a cebola, o alho e o gengibre. Adicione o frango cortado em cubos e doure. Acrescente o curry em pó, o leite de coco, os tomates e os pimentões picados. Cozinhe até o frango ficar macio. Sirva com coentro fresco por cima.
+
+Nome: Lasanha de Berinjela
+País de Origem: Itália
+Ingredientes: berinjela, molho de tomate, queijo muçarela, queijo parmesão, manjericão, sal, pimenta
+Modo de Preparo: Corte a berinjela em fatias finas e grelhe até dourar. Em um refratário, alterne camadas de berinjela, molho de tomate, muçarela e parmesão. Repita as camadas até finalizar. Leve ao forno preaquecido a 180°C por cerca de 30 minutos, até gratinar. Sirva com folhas de manjericão fresco por cima.
+
+Nome: Sushi de Salmão
+País de Origem: Japão
+Ingredientes: arroz para sushi, salmão fresco, nori (alga), vinagre de arroz, açúcar, sal, wasabi, gengibre em conserva
+Modo de Preparo: Cozinhe o arroz conforme as instruções da embalagem, tempere com uma mistura de vinagre de arroz, açúcar e sal. Espalhe o arroz sobre a alga, adicione fatias de salmão e enrole com cuidado. Corte em pedaços e sirva com wasabi e gengibre em conserva.
+
+Nome: Moqueca de Peixe
+País de Origem: Brasil
+Ingredientes: peixe (robalo, dourado), camarão, pimentão, tomate, cebola, alho, leite de coco, azeite de dendê, coentro, sal, pimenta
+Modo de Preparo: Refogue a cebola, o alho e o pimentão. Adicione o tomate picado, o peixe em pedaços e os camarões. Acrescente o leite de coco e o azeite de dendê. Cozinhe em fogo baixo até o peixe e os camarões estarem cozidos. Sirva com coentro picado por cima.
+
+Nome: Falafel
+País de Origem: Oriente Médio
+Ingredientes: grão-de-bico, cebola, alho, salsa, coentro, cominho, páprica, bicarbonato de sódio, farinha de trigo, sal, pimenta
+Modo de Preparo: Bata o grão-de-bico com a cebola, o alho, a salsa, o coentro, o cominho, a páprica, o bicarbonato de sódio, a farinha de trigo, o sal e a pimenta no processador. Modele em bolinhas e frite em óleo quente até dourar. Escorra em papel toalha e sirva com molho de tahine.
+
+Nome: Ratatouille
+País de Origem: França
+Ingredientes: berinjela, abobrinha, pimentão, tomate, cebola, alho, azeite de oliva, tomilho, manjericão, sal, pimenta
+Modo de Preparo: Corte os vegetais em rodelas finas. Em uma assadeira, intercale camadas de vegetais, regando cada camada com azeite de oliva e temperando com alho picado, tomilho, manjericão, sal e pimenta. Asse em forno preaquecido a 180°C por cerca de 40 minutos, até os vegetais ficarem macios.
+
+Nome: Pão de Queijo
+País de Origem: Brasil
+Ingredientes: polvilho azedo, queijo minas fresco, leite, óleo, ovos, sal
+Modo de Preparo: Ferva o leite com o óleo e o sal. Despeje sobre o polvilho e misture. Adicione os ovos e o queijo minas fresco ralado. Modele em bolinhas e leve para assar em
