@@ -17,7 +17,7 @@ git clone https://github.com/kaik-e/CookHub
 **Ou baixe a versão mais atualizada por aqui ([Download](https://github.com/kaik-e/CookHub/archive/refs/tags/python.zip))**
 
 > [!IMPORTANT]  
-> Certifique-se se você possui a versão (3.12) ou maior do python
+> Certifique-se que você possui a versão (3.12) ou maior do python
 
 ## 📺 Demo
 
