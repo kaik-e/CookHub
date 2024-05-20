@@ -14,7 +14,7 @@ Use o [Git](https://git-scm.com/) para instalar o cookhub de forma rápida
 git clone https://github.com/kaik-e/CookHub
 ```
 
-**Ou baixe a versão mais atualizada por aqui ([Download](https://github.com/kaik-e/CookHub/archive/refs/tags/python.zip))**
+**Ou baixe a versão mais atualizada por aqui ([Download](https://github.com/kaik-e/CookHub/archive/refs/tags/cookhub.zip))**
 
 > [!IMPORTANT]  
 > Certifique-se que você possui a versão (3.12) ou maior do python
