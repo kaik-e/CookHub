@@ -49,26 +49,15 @@ def menu_Crud():
     {c.VERMELHO}↺  {c.BOLD}{c.BRANCO}5 {c.END}Voltar
     {c.VERMELHO}⤫  {c.BOLD}{c.BRANCO}6 {c.END}Sair
     """)
-
-def menu_Favoritos():
-        clear()
-        print(f""" {c.BRANCO}({c.WARNING}✶{c.BRANCO})
-              
-    {c.VIOLETA}✎  {c.BOLD}{c.BRANCO}1 {c.END}Adicionar aos favoritos
-    {c.WARNING}✺  {c.BOLD}{c.BRANCO}2 {c.END}Visualizar favoritos
-    {c.VERMELHO}↺  {c.BOLD}{c.BRANCO}3 {c.END}Voltar
-    {c.VERMELHO}⤫  {c.BOLD}{c.BRANCO}4 {c.END}Sair
-    """)
     
-
 def adicionar_Receita():
-    nome = input("Digite o nome da receita: ").title()
-    pais_origem = input("Digite o país de origem da receita: ").title()
-    ingredientes = input("Digite os ingredientes da receita (separados por vírgula): ").title()
-    modo_preparo = input("Digite o modo de preparo da receita: ").title()
+    nome = input(f"{c.AMARELO}✎ {c.BRANCO}Digite o nome da receita: ").title()
+    pais_origem = input(f"{c.VERDE}✎ {c.BRANCO}Digite o país de origem da receita: ").title()
+    ingredientes = input(f"{c.VIOLETA}✎ {c.BRANCO}Digite os ingredientes da receita (separados por vírgula): ").title()
+    modo_preparo = input(f"{c.AZUL}✎ {c.BRANCO}Digite o modo de preparo da receita: ").title()
     
     file = open("receitas.txt","a", encoding='utf-8')
-    file.write(f"\n\nNome: {nome}\n")
+    file.write(f"Nome: {nome}\n")
     file.write(f"País de Origem: {pais_origem}\n")
     file.write(f"Ingredientes: {ingredientes}\n")
     file.write(f"Modo de Preparo: {modo_preparo}\n")
@@ -85,25 +74,6 @@ def ver_Receitas():
     {c.VERMELHO}↺  {c.BOLD}{c.BRANCO}1 {c.END}Voltar
     {c.VERMELHO}⤫  {c.BOLD}{c.BRANCO}2 {c.END}Sair
     """)
-
-# Função para filtrar receitas por país de origem
-def filtrar_Pais():
-    pais = input(f"{c.AZUL}◍ {c.BRANCO}Digite o país de origem para filtrar as receitas: ").title()
-    file = open("receitas.txt","r", encoding='utf-8')
-    print(f"\nReceitas do país '{pais}':")
-    encontrada = False
-    for linha in file:
-        if linha.strip() == f"País de Origem: {pais}":
-            for _ in range(3):
-                print(next(file).strip())
-            encontrada = True
-
-    if not encontrada:
-        print("Nenhuma receita encontrada para este país.")
-    print(f"""
-    {c.VERMELHO}↺  {c.BOLD}{c.BRANCO}1 {c.END}Voltar
-    {c.VERMELHO}⤫  {c.BOLD}{c.BRANCO}2 {c.END}Sair
-    """)    
 
 # Função para atualizar uma receita existente
 def atualizar_Receita():
@@ -185,12 +155,42 @@ def marcar_Favorito():
     else:
         print("Receita não encontrada.")
 
+# Função para filtrar receitas por país de origem
+def filtrar_Pais():
+    pais = input(f"{c.AZUL}◍ {c.BRANCO}Digite o país de origem para filtrar as receitas: ").title()
+    file = open("receitas.txt","r", encoding='utf-8')
+    print(f"\nReceitas do país ({c.BOLD}{pais}{c.END}):")
+    encontrada = False
+    for linha in file:
+        if linha.strip() == f"País de Origem: {pais}":
+            for _ in range(3):
+                print(next(file).strip())
+            encontrada = True
+
+    if not encontrada:
+        print("Nenhuma receita encontrada para este país.")
+    print(f"""
+    {c.VERMELHO}↺  {c.BOLD}{c.BRANCO}1 {c.END}Voltar
+    {c.VERMELHO}⤫  {c.BOLD}{c.BRANCO}2 {c.END}Sair
+    """)    
+
+def menu_Favoritos():
+        clear()
+        print(f""" {c.BRANCO}({c.WARNING}✶{c.BRANCO})
+              
+    {c.VIOLETA}✎  {c.BOLD}{c.BRANCO}1 {c.END}Adicionar aos favoritos
+    {c.WARNING}✺  {c.BOLD}{c.BRANCO}2 {c.END}Visualizar favoritos
+    {c.VERMELHO}↺  {c.BOLD}{c.BRANCO}3 {c.END}Voltar
+    {c.VERMELHO}⤫  {c.BOLD}{c.BRANCO}4 {c.END}Sair
+    """)
+
 # Função para visualizar as receitas favoritas
 def ver_Favoritos():
     file = open("receitas.txt","r", encoding='utf-8')
     print(f"{c.WARNING}✶  {c.BRANCO}Favoritos")
     for linha in file:
         if "(Favorita)" in linha:
+            print()
             print(linha.strip())
             for _ in range(3):  # Pula as próximas três linhas (país, ingredientes, modo de preparo)
                 next(file)
@@ -205,7 +205,7 @@ def contar_Receitas():
     for line in file:
         if "Nome" in line:
             count += 1
-    print(f"{c.AMARELO}∘ {c.BRANCO}Total de receitas cadastradas: {count}")
+    print(f"{c.AMARELO}∘ {c.BRANCO}Total de receitas cadastradas: {c.BOLD}{c.VERDE}{count}{c.END}")
     print(f"""
     {c.VERMELHO}↺  {c.BOLD}{c.BRANCO}1 {c.END}Voltar
     {c.VERMELHO}⤫  {c.BOLD}{c.BRANCO}2 {c.END}Sair
@@ -223,4 +223,13 @@ def receita_Aleatoria():
     """)    
 
 def pencerrado():
-    print(f"CookHub Encerrado! {c.BOLD}{c.VIOLETA}(^_~)/{c.END}")
+    clear()
+    print(c.WARNING + 
+    f"""
+    {c.VIOLETA}+----------------------------+
+    {c.VIOLETA}|{c.BRANCO}░█▀▀░█▀█░█▀█░█░█░█░█░█░█░█▀▄{c.VIOLETA}|
+    {c.VIOLETA}|{c.BRANCO}░█░░░█░█░█░█░█▀▄░█▀█░█░█░█▀▄{c.VIOLETA}|
+    {c.VIOLETA}|{c.BRANCO}░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀░▀░▀▀▀░▀▀░{c.VIOLETA}|
+    {c.VIOLETA}+----------------------------+
+    """ + c.END)
+    print(f"      CookHub Encerrado! {c.BOLD}{c.VIOLETA}(^_~)/{c.END}")

@@ -1,5 +1,9 @@
 from biblioteca.interface import*
 
+# As "opc's" dentro das funções sao abreviações do nome delas mesmas 
+# Ex: Opção menu -> opc_menu
+# Opção receita aleatoria -> opc_ra
+
 while True:
     try:
         menu()
@@ -105,6 +109,7 @@ while True:
         if opc_fun == 6:
             pencerrado()
             break
+    #Tratamnto do erro de inputs com string
     except ValueError:
         print("Erro")
         

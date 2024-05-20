@@ -8,17 +8,17 @@ País de Origem: Itália
 Ingredientes: Tomates maduros, pão italiano, alho, azeite de oliva, folhas de manjericão fresco.
 Modo de Preparo: Toste o pão, esfregue o alho, regue com azeite, coloque os tomates e o manjericão.
 
-Nome: Guacamole
-País de Origem: Ads
-Ingredientes: Asd
-Modo de Preparo: Asd
+Nome: Guacamole (Favorita)
+País de Origem: México
+Ingredientes: abacate, tomate, cebola, coentro, limão, sal, pimenta
+Modo de Preparo: Amasse o abacate, adicione os tomates picados, a cebola, o coentro, o suco de limão, o sal e a pimenta. Misture bem e sirva com nachos.
 
 Nome: Salada Grega
 País de Origem: Grécia
 Ingredientes: Tomate, pepino, cebola roxa, azeitonas pretas, queijo feta, azeite de oliva, orégano fresco.
 Modo de Preparo: Corte os vegetais, misture com as azeitonas e o queijo, tempere com azeite e orégano.
 
-Nome: Omelete de Queijo
+Nome: Omelete de Queijo (Favorita)
 País de Origem: França
 Ingredientes: Ovos, queijo ralado, manteiga, sal, pimenta.
 Modo de Preparo: Bata os ovos com o queijo, tempere, cozinhe em fogo médio até firmar.
