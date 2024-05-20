@@ -2,11 +2,11 @@
     <img src="https://i.imgur.com/4KTdED7.png" alt="CookHub Logo" title="CookHub" align="right" height="70" />
 </a>
 
-# CookHub
+# 🍴 CookHub
 
 🍴 CookHub é um simples programa feito em python sem o uso de libs para ajudar Rafael a organizar suas receitas em um só lugar!
 
-## Instalação
+## 💻 Instalação
 
 Use o [Git](https://git-scm.com/) para instalar o cookhub de forma rápida
 
@@ -16,13 +16,14 @@ git clone https://github.com/kaik-e/CookHub
 
 **Ou baixe a versão mais atualizada por aqui ([Download](https://github.com/kaik-e/CookHub/archive/refs/tags/python.zip))**
 
-## Demo
+> [!IMPORTANT]  
+> Certifique-se se você possui a versão (3.12) ou maior do python
 
-<a>
-    <img src="https://i.imgur.com/VPAGTRr.gif" alt="CookHub Logo" title="CookHub" align="center" height="470" />
-</a>
+## 📺 Demo
 
-## Uso
+![Demo gif](img/cook.gif)
+
+## 🖱️ Uso
 
 ```bash
 # Voce pode adicionar receitas manualmente seguindo estes parametros no arquivo [receitas.txt]
@@ -41,7 +42,7 @@ Modo de Preparo: -
 > 1 #O input deve ser um numero inteiro valido
 ```
 
-## Features
+## 🎯 Features
 
 | Features             | 🍴CookHub |
 | -------------------- | :-------: |
@@ -52,7 +53,7 @@ Modo de Preparo: -
 | Contador de receitas |    ✔️     |
 | Menu responsivo      |    ✔️     |
 
-#### Funcionalidade
+#### ⚙️ Funcionalidade
 
 - **CRUD** - Possibilita cadastrar, visualizar, atualizar e excluir receitas dentro do CookHub
 - **Favoritos** - Possibilita adicionar, remover e ver as suas receitas favoritas
@@ -60,6 +61,12 @@ Modo de Preparo: -
 - **Receita aleatoria** - Mostra uma receita aleatoria de dentro das suas receitas
 - **Contador de receitas** - Mostra a contagem de receitas
 
-## Creditos
+## 📦 Tecnologias
+
+Linguagem - **Python 3.12**
+
+![made-with-python](https://img.shields.io/badge/Made%20with-Python3-brightgreen)
+
+## 👥 Creditos
 
 [Kaike](https://github.com/kaik-e) [Davi](https://github.com/davimqz) [Gustavo](https://github.com/Gustaguiar02)
