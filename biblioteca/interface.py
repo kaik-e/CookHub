@@ -63,12 +63,12 @@ def menu_Favoritos():
 
 def adicionar_Receita():
     nome = input("Digite o nome da receita: ").title()
-    pais_origem = input(f"{c.VERDE}✎ {c.BRANCO}Digite o país de origem da receita: ").title()
-    ingredientes = input(f"{c.VIOLETA}✎ {c.BRANCO}Digite os ingredientes da receita (separados por vírgula): ").title()
-    modo_preparo = input(f"{c.AZUL}✎ {c.BRANCO}Digite o modo de preparo da receita: ").title()
+    pais_origem = input("Digite o país de origem da receita: ").title()
+    ingredientes = input("Digite os ingredientes da receita (separados por vírgula): ").title()
+    modo_preparo = input("Digite o modo de preparo da receita: ").title()
     
     file = open("receitas.txt","a", encoding='utf-8')
-    file.write(f"Nome: {nome}\n")
+    file.write(f"\n\nNome: {nome}\n")
     file.write(f"País de Origem: {pais_origem}\n")
     file.write(f"Ingredientes: {ingredientes}\n")
     file.write(f"Modo de Preparo: {modo_preparo}\n")
@@ -90,8 +90,7 @@ def ver_Receitas():
 def filtrar_Pais():
     pais = input(f"{c.AZUL}◍ {c.BRANCO}Digite o país de origem para filtrar as receitas: ").title()
     file = open("receitas.txt","r", encoding='utf-8')
-
-    print(f"\nReceitas do país ({c.BOLD}{pais}{c.END}):")
+    print(f"\nReceitas do país '{pais}':")
     encontrada = False
     for linha in file:
         if linha.strip() == f"País de Origem: {pais}":
@@ -206,7 +205,7 @@ def contar_Receitas():
     for line in file:
         if "Nome" in line:
             count += 1
-    print(f"{c.AMARELO}∘ {c.BRANCO}Total de receitas cadastradas: {c.BOLD}{c.VERDE}{count}{c.END}")
+    print(f"{c.AMARELO}∘ {c.BRANCO}Total de receitas cadastradas: {count}")
     print(f"""
     {c.VERMELHO}↺  {c.BOLD}{c.BRANCO}1 {c.END}Voltar
     {c.VERMELHO}⤫  {c.BOLD}{c.BRANCO}2 {c.END}Sair
@@ -224,13 +223,4 @@ def receita_Aleatoria():
     """)    
 
 def pencerrado():
-    clear()
-    print(c.WARNING + 
-    f"""
-    {c.VIOLETA}+----------------------------+
-    {c.VIOLETA}|{c.BRANCO}░█▀▀░█▀█░█▀█░█░█░█░█░█░█░█▀▄{c.VIOLETA}|
-    {c.VIOLETA}|{c.BRANCO}░█░░░█░█░█░█░█▀▄░█▀█░█░█░█▀▄{c.VIOLETA}|
-    {c.VIOLETA}|{c.BRANCO}░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀░▀░▀▀▀░▀▀░{c.VIOLETA}|
-    {c.VIOLETA}+----------------------------+
-    """ + c.END)
-    print(f"""      {c.BOLD}CookHub Encerrado! {c.VIOLETA}(^_~)/{c.END}""")
+    print(f"CookHub Encerrado! {c.BOLD}{c.VIOLETA}(^_~)/{c.END}")
